@@ -1,0 +1,254 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid ee27d19c-8dca-4ac8-a760-6dfd54d28071)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (polyline (pts (xy 133.35 68.58) (xy 133.35 115.57))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 008b4012-2c52-4aa4-888d-cd897ddad4e9)
+  )
+  (polyline (pts (xy 29.845 120.015) (xy 133.35 120.015))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 26d2eb2d-9442-4000-b465-b21f4af5ebcc)
+  )
+  (polyline (pts (xy 29.845 38.1) (xy 29.845 62.865))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 2b301642-6c8e-419f-9c03-d237ef0581a6)
+  )
+  (polyline (pts (xy 29.845 68.58) (xy 133.35 68.58))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 2c3f01b7-0e08-4f18-a6df-af7a9671d675)
+  )
+  (polyline (pts (xy 133.35 151.13) (xy 133.35 177.165))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 36fc04ad-263c-4abe-bdf2-ed58a1b72c25)
+  )
+  (polyline (pts (xy 133.35 115.57) (xy 29.845 115.57))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 421779cd-cb00-4886-bbc4-bfa39c78de93)
+  )
+  (polyline (pts (xy 29.845 68.58) (xy 29.845 115.57))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 50dd98d9-627a-4ac9-936a-3e04d5480b69)
+  )
+  (polyline (pts (xy 29.845 62.865) (xy 133.35 62.865))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 55e24222-47aa-4ac7-874a-f3d03b099648)
+  )
+  (polyline (pts (xy 133.35 177.165) (xy 29.845 177.165))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 60645338-45ed-4cf3-aa1c-a413b1391539)
+  )
+  (polyline (pts (xy 29.845 120.015) (xy 29.845 146.05))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 646696b3-c6e5-4143-8e8e-f6b5aa8bb926)
+  )
+  (polyline (pts (xy 133.35 120.015) (xy 133.35 146.05))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 765ae386-123a-433e-8976-7a2e10315e9c)
+  )
+  (polyline (pts (xy 133.35 146.05) (xy 29.845 146.05))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 97ea7f7e-a0bc-49a2-8167-70a8677b9ea3)
+  )
+  (polyline (pts (xy 29.845 151.13) (xy 133.35 151.13))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 9d5c62d0-1e4d-4e31-95f6-caaf13222f50)
+  )
+  (polyline (pts (xy 133.35 38.1) (xy 29.845 38.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid bdb073a7-fa12-4af5-be42-7f673da22376)
+  )
+  (polyline (pts (xy 29.845 151.13) (xy 29.845 177.165))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid e3422419-4946-448c-9da2-838593b2890e)
+  )
+  (polyline (pts (xy 133.35 62.865) (xy 133.35 38.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid f0a10330-3326-4691-8526-95efede18902)
+  )
+
+  (text "Breadboard adapter for\nFFC-8 connector" (at 76.835 54.61 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 2aa8dc6f-9edf-4f06-9f70-5574d4cff96d)
+  )
+  (text "Demo board 1:\nRGB LED that can't be\nprogrammed over USB\n\nRevision 2 has not been\ntested IRL yet"
+    (at 76.835 102.87 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 30373001-f456-486c-8552-a67068f7a009)
+  )
+  (text "Demo board 3:\nDigispark-like board\n\nHas not been tested yet"
+    (at 78.105 173.355 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 754b8133-7a6e-4917-9cb5-6bef49ff531e)
+  )
+  (text "can" (at 105.41 130.175 0)
+    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
+    (uuid 9297bd6b-05e4-4dc8-87a2-6c77bd2bfa9e)
+  )
+  (text "Demo board 2:\nRGB LED that can be\nprogrammed over USB\n\nComing soon"
+    (at 78.105 142.24 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid fff3102a-6ec1-4470-8d1e-be86a9b09854)
+  )
+
+  (sheet (at 31.75 95.885) (size 31.75 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 269a7af4-73b7-4598-900c-69837bb9cd7e)
+    (property "Sheet name" "RGB Dingus Rev. 2" (id 0) (at 31.75 95.1734 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "rgb_no_bootloader_r2.kicad_sch" (id 1) (at 31.75 111.7096 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 31.75 43.18) (size 31.75 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 31ae1ddb-55f8-4875-b94d-87a4d0c86414)
+    (property "Sheet name" "FFC-8 to breadboard adapter" (id 0) (at 31.75 42.4684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "ffc8_breadboard.kicad_sch" (id 1) (at 31.75 60.2746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 31.75 72.39) (size 31.75 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 82d6bed5-fe1c-4371-abeb-57e5be235891)
+    (property "Sheet name" "RGB Dingus Rev. 1" (id 0) (at 31.75 71.6784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "rgb_no_bootloader.kicad_sch" (id 1) (at 31.75 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 32.385 156.845) (size 31.75 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid f5410483-b232-4090-99ff-809aab4a63bc)
+    (property "Sheet name" "Digispark-ish Rev. 2" (id 0) (at 32.385 156.1334 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "digisparkish_r2.kicad_sch" (id 1) (at 32.385 172.6696 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/31ae1ddb-55f8-4875-b94d-87a4d0c86414" (page "2"))
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891" (page "3"))
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e" (page "4"))
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc" (page "6"))
+  )
+
+  (symbol_instances
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-0000610823d8"
+      (reference "C1") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/da09c135-21b1-419a-9e15-1005c0505ad2"
+      (reference "C2") (unit 1) (value "0.1μF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/0ee62bf8-a846-463c-8802-b6a895b48008"
+      (reference "C4") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-0000614f9cd6"
+      (reference "D1") (unit 1) (value "LED_AGRB") (footprint "USB-C_PCB_experiments:LED_everlight_EASV2713RGBA1")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/01a468c2-81db-4c99-a9db-47691f62a994"
+      (reference "D2") (unit 1) (value "3.6V") (footprint "Diode_SMD:D_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/52acc83a-a574-4c7a-99c7-b6ed011c692c"
+      (reference "D3") (unit 1) (value "3.6V") (footprint "Diode_SMD:D_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/4380435a-5759-4658-a7ae-de532f76a1ff"
+      (reference "D4") (unit 1) (value "LED") (footprint "LED_SMD:LED_0402_1005Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/32aae5c0-fe70-4e51-997b-64efc593298b"
+      (reference "D8") (unit 1) (value "LED_AGRB") (footprint "USB-C_PCB_experiments:LED_everlight_EASV2713RGBA1")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/4aeab911-8dfb-4447-8ec4-cf7d77902fa7"
+      (reference "J1") (unit 1) (value "USB-C fingers") (footprint "")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-000061070bbc"
+      (reference "J2") (unit 1) (value "FFC programming interface") (footprint "USB-C_PCB_experiments:FFC-08")
+    )
+    (path "/31ae1ddb-55f8-4875-b94d-87a4d0c86414/108ee113-4a70-4e45-b219-586707d7d8ae"
+      (reference "J3") (unit 1) (value "Conn_01x08") (footprint "")
+    )
+    (path "/31ae1ddb-55f8-4875-b94d-87a4d0c86414/a58f4c1d-a01b-4226-ad00-ac13d451eb8b"
+      (reference "J4") (unit 1) (value "Conn_01x08") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/c8d28736-c135-40e3-adc8-2d3e1cde7359"
+      (reference "J5") (unit 1) (value "USB-C fingers") (footprint "USB-C_PCB_experiments:usb-c-one-sided")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/a4afd2c4-b745-4435-8313-6d7f4ac2319d"
+      (reference "J6") (unit 1) (value "FFC programming interface") (footprint "USB-C_PCB_experiments:FFC-08")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/c5e7a847-82a7-4c51-a2b7-faf6e112bb90"
+      (reference "J9") (unit 1) (value "USB-C fingers") (footprint "")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/5b6b71a1-fd45-4a0c-bf6f-970085f67e2c"
+      (reference "J10") (unit 1) (value "FFC programming interface") (footprint "USB-C_PCB_experiments:FFC-08")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-00006110c82b"
+      (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-00006110c82f"
+      (reference "R2") (unit 1) (value "330") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-0000614f9cd2"
+      (reference "R3") (unit 1) (value "220") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/00000000-0000-0000-0000-00006110c831"
+      (reference "R4") (unit 1) (value "220") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/4a5e9d71-caf4-4774-a3b0-847a394499e7"
+      (reference "R5") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/1c5579d8-b170-4b61-bcdf-257f2a849bee"
+      (reference "R6") (unit 1) (value "68Ω") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/848327a2-5864-44f6-8a15-0d7108f549d8"
+      (reference "R7") (unit 1) (value "68Ω") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/ca06661f-8f6a-43d3-bf64-87a9e1a5b618"
+      (reference "R8") (unit 1) (value "68Ω") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/945dcd4c-9c84-4827-b996-a783a5bf8df4"
+      (reference "R9") (unit 1) (value "330Ω") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/7140df7b-d885-4cea-981f-ea395ba7d43b"
+      (reference "R15") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/48eb36dd-5e1a-4315-b9ae-a1173e00baaa"
+      (reference "R16") (unit 1) (value "330") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/0b241ef1-eedf-4089-a469-ec189a666d6a"
+      (reference "R17") (unit 1) (value "220") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/20e06090-4dbe-4801-bc41-713fc6b6c033"
+      (reference "R18") (unit 1) (value "220") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/82d6bed5-fe1c-4371-abeb-57e5be235891/cafdca51-45de-43e2-ab6d-0761d62a763b"
+      (reference "U1") (unit 1) (value "ATtiny84A-CC") (footprint "Package_BGA:UFBGA-15_3.0x3.0mm_Layout4x4_P0.65mm")
+    )
+    (path "/f5410483-b232-4090-99ff-809aab4a63bc/e6007336-2cbc-4b81-9bae-b3247ab4bee1"
+      (reference "U2") (unit 1) (value "ATtiny84A-CC") (footprint "Package_BGA:UFBGA-15_3.0x3.0mm_Layout4x4_P0.65mm")
+    )
+    (path "/269a7af4-73b7-4598-900c-69837bb9cd7e/94ded727-f22a-4db8-8f06-68b9eef15961"
+      (reference "U4") (unit 1) (value "ATtiny84A-CC") (footprint "Package_BGA:UFBGA-15_3.0x3.0mm_Layout4x4_P0.65mm")
+    )
+  )
+)
