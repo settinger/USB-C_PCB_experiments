@@ -1,7 +1,5 @@
 # USB-C PCB Experiments
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3VAQ5QeVk8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 This is part of an ongoing series of projects involving creative interpretations of the USB mechanical standards. You've probably seen [2.0mm thick PCBs that fit in USB ports](http://digistump.com/products/1), and maybe you've seen [0.6mm thick PCBs that fit in USB-Micro cables](https://twitter.com/DHammarskjold/status/1285291152602796032). So what about USB-C? T​he plastic tab inside a USB-C port is about 0.7mm thick. I think [bobricius](https://hackaday.io/bobricius) has had success using 0.8mm thick PCBs; 0.6mm thick PCBs are way too loose. I haven't found a fab that will do 0.7mm (or 28 mil) PCBs unless you special-order an entire panel.​
 
 So, what other ways are there to reach 0.7mm thickness? My original plan was to join an 0.1mm flex PCB and an 0.6mm FR4 PCB, but then I realized: you know what else is 0.6mm thick? The ATtiny84A BGA package. Granted, there are only contacts on one side of the PCB, but that shouldn't matter with the symmetric USB-C pinout, right? ...Right? (foreshadowing)
