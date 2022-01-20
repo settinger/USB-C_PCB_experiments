@@ -8,7 +8,7 @@ So, what other ways are there to reach 0.7mm thickness? My original plan was to 
 
 ![The BGA IC soldered onto the flex PCB, being measured by calipers that show 0.0275 inches (0.70 mm)](media/onthedot.jpg)
 
-The 3mm-square ATtiny acts as a stiffener for the flex PCB, and it comes out to 0.7mm on the dot! I only have an imperial set of calipers as seen above. The dial shows 0.0275 inches, which is 0.6985 millimeters. So this is looking pretty promising.
+The 3mm-square ATtiny acts as a stiffener for the flex PCB, and it comes out to 0.7mm on the dot! I only have an imperial set of calipers as seen above. The dial shows 0.0275 inches, which is 0.6985 millimeters. ~~So this is looking pretty promising.~~ After [my initial tests](https://twitter.com/DHammarskjold/status/1476667605746270224), I am leaning toward a circuit sandwiched between two PCBs. The result is about 0.85mm thick with OSH Park flex PCBs, so I may need to locate another vendor.
 
 What would you do with an ATtiny that lives inside your USB-C cable? I have a few ideas for demonstrations at the moment.
 
@@ -24,16 +24,17 @@ What would you do with an ATtiny that lives inside your USB-C cable? I have a fe
 
 There are two revisions of this design; the schematics are in the repo as `rgb_no_bootloader.kicad_sch` and `rgb_no_bootloader_r2.kicad_sch`. Revision 1 is the one that I have assembled and ready to work with, it's also the one I would like some code help with! My current code is in the in the code folder as `demo_1_revision_1`; it is saved as an Arduino .ino file but it should work fine with AVR-GCC without any changes.
 
-This demo is as simple as possible: the microcontroller controlls an RGB LED that juuuust barely pokes out of the USB-C cable plug. It has to be programmed using that 8-pin FFC connector, and then the FFC connector has to be snipped off in order to use the dang thing. Right now I have one fully-soldered board, but I haven't cut the FFC connector yet because I would like some help improving the code.
+This demo is as simple as possible: the microcontroller controlls an RGB LED that juuuust barely pokes out of the USB-C cable plug. It has to be programmed using that 8-pin FFC connector, and then the FFC connector has to be snipped off in order to use the dang thing. Right now I have one fully-soldered version of revision 1, ~~but I haven't cut the FFC connector yet because I would like some help improving the code.~~
 
-Demo 1 Revision 2 is necessary because, on revision 1, the RGB LED is *not* connected to the Fast-PWM-enabled pins on the microcontroller. As a result I have to use [binary code modulation](http://www.batsocks.co.uk/readme/art_bcm_3.htm) to achieve any sort of brightness control. It's working alright, [as shown here](https://twitter.com/DHammarskjold/status/1475741148522049536), but I'm not confident enough with the code to chop off the programming connector yet.
+Demo 1 Revision 2 is necessary because, on revision 1, the RGB LED is *not* connected to the Fast-PWM-enabled pins on the microcontroller. As a result I have to use [binary code modulation](http://www.batsocks.co.uk/readme/art_bcm_3.htm) to achieve any sort of brightness control. It's working alright, [as shown here](https://twitter.com/DHammarskjold/status/1475741148522049536), ~~but I'm not confident enough with the code to chop off the programming connector yet.~~
 
-As you can see, there is a large tab sticking out so I can grab and remove the PCB from the cable. However, out of spite for, uh, myself, I have labelled it the "cowards' tab." Past me is encouraging present me to remove that tab and make the board impossible to remove, thereby turning a useful cable into a cute little art piece for all eternity.
+When I finally removed the connector, I documented it [in this Twitter thread](https://twitter.com/DHammarskjold/status/1476667605746270224). I got excited and tried putting it in a powered USB cable while the top side was exposed. Unsurprisingly, this caused some shorts and some damage! I soldered in a new RGB LED and applied conformal coating. The conformal coating helped for a little while, but got scraped away pretty quickly. This suggests to me that any future designs will need to be sandwiched between *two* PCBs.
 
-## Demo 2: RGB LED that *can* be programmed over USB
-*TODO: migrate these files to KiCad 6, add to repo, and update this document*
+As you can see, there is a large tab sticking out so I can grab and remove the PCB from the cable. However, out of spite for, uh, myself, I have labelled it the "cowards' tab." Past me was encouraging present me to remove that tab and make the board impossible to remove, thereby turning a useful cable into a cute little art piece for all eternity.
 
-It would be nice to use the USB data lines to program the microcontroller! I didn't attempt this for the first revision because I wanted to keep the board as uncluttered and simple as possible. It will result in a denser board that may need more careful soldering, but it should be possible!
+## Demo 2: ~~R~~GB LED that *can* be programmed over USB
+
+It would be nice to use the USB data lines to program the microcontroller! I didn't attempt this for the first revision because I wanted to keep the board as uncluttered and simple as possible. It will result in a denser board that may need more careful soldering, but it should be possible! Well, *mostly* possible. I didn't find a way to route red green and blue at the same time, so I've omitted red from the design.
 
 ![Schematic of the programmable RGB LED USB-C PCB](media/demo2schematic.png)
 
@@ -50,3 +51,11 @@ There is an interesting issue, however. In the USB-C standard, the D+/D- lines a
 ![KiCad 3D render of the miniature Digispark PCB](media/demo3render.png)
 
 In this version, the FFC portion is meant to stay attached! And all the components are 0402-sized with generous spacing so I can worry less when soldering. As a result it can be used in a slightly more "normal" fashion—still operable by sticking it inside a USB-C cable, but now there's a breakout of sorts.
+
+## Demo 4: "Coulda used a 555"
+
+![Schematic of the USB-C PCB using BGA 555 timers instead of a microcontroller](media/demo4schematic.png)
+
+![KiCad 3D render of the USB-C PCB using BGA 555 timers instead of a microcontroller](media/demo4render.png)
+
+On the Hackaday websites, "Coulda used a 555" is shorthand for grumpy commenters who criticize designs that they consider inelegant, for example, using a microcontroller where a 555 would suffice. In the past I've poked fun at this notion by, among other things, using *three* microcontrollers where a 555 would suffice, and using a 555 Schmitt Trigger where a single SPST button would suffice. As luck would have it, there is a BGA 555 IC that is just shy of 0.6mm tall! I've had to pair it with a 10μF capacitor that is a bit taller, but it's a fun idea to explore later.

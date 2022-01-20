@@ -888,7 +888,7 @@
     (uuid 0ee62bf8-a846-463c-8802-b6a895b48008)
     (property "Reference" "C4" (id 0) (at 126.365 32.3342 90))
     (property "Value" "0.1u" (id 1) (at 126.365 34.6456 90))
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 122.555 39.7002 0)
+    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (id 2) (at 122.555 39.7002 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 126.365 38.735 0)

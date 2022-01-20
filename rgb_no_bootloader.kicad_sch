@@ -887,7 +887,7 @@
     (uuid 00000000-0000-0000-0000-0000610823d8)
     (property "Reference" "C1" (id 0) (at 106.68 28.5242 90))
     (property "Value" "0.1u" (id 1) (at 106.68 30.8356 90))
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 102.87 35.8902 0)
+    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (id 2) (at 102.87 35.8902 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 106.68 34.925 0)
